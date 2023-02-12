@@ -8,11 +8,10 @@ import Food from './components/Food'
 import Work from './components/Work'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-import {useState} from 'react'
+
 
 function App() {
 
-  const [clickEdit, setClickEdit] = useState(false)
 
   return (
     <BrowserRouter >
@@ -28,12 +27,8 @@ function App() {
         </div>
       </header>
 
-      <section>
-        <i className='editIcon' onClick={() => setClickEdit(true)}>icono</i>
-      </section>
-
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home/> }></Route>
         <Route path='/travel' element={<Travel />}></Route>
         <Route path='/lifestyle' element={<Lifestyle />}></Route>
         <Route path='/business' element={<Business />}></Route>
