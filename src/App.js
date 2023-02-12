@@ -15,7 +15,7 @@ function App() {
       <header>
         <Navbar/>
         <div className='navbar'>
-          <Link to='/'>Home</Link>
+          <Link to='/' className='text-3x1 font-bold'>Home</Link>
           <Link to='/travel'>Travel</Link>
           <Link to='/lifestyle'>Lifestyle</Link>
           <Link to='/business'>Business</Link>
