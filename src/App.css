@@ -1,4 +1,52 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media(width > 768px) {
+
+  .postsContainer {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin: 20px;
+    }
+}
+
+@media(width < 767px) {
+    .postsContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 20px;
+  }
+}
+
+.navbarContainer {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  font-size: 16px;
+  gap: 20px;
+  border-color: brown;
+  padding: 20px; 
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:20px;
+}
+
+.navbarFirstTitle{
+  color: orange;
+  font-size: 15px;
+}
+
+.navbarSecondTitle{
+  font-size: 30px;
+  font-weight:bolder
+}
+
+
+
+
+

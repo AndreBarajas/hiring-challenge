@@ -15,8 +15,8 @@ function Home() {
             {post.map((element, index) => (
             <div className='postContainer'>
                     <img src='https://source.unsplash.com/random' alt='background'></img>
-                    <h4>{element.title}</h4>
-                    <h4>{element.body}</h4>
+                    <h4 className='postTitle'>{element.title}</h4>
+                    <h4 className='postBody'>{element.body}</h4>
             </div>
             )   )}
         </div>
